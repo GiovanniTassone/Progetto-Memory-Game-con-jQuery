@@ -146,7 +146,7 @@ h1.cambiaCaselle , .cambiaCaselle{
     margin-top: 20px;
     font-size: 1.6em;
 }
-#tempoTrascorso{
+#tempoTrascorso, .clickModal{
     font-size: 1.6em;
     font-weight: bold;
 }

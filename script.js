@@ -49,7 +49,7 @@ $(document).ready(function () {
   var counter = 1;
   let coppieGiuste = [];
   $(images).click(function () {
-    $("#clicks").html(counter);
+    $(".mosse").html(counter);
     $(this).addClass("girata");
     $(this).removeClass("images");
     counter++;
@@ -58,7 +58,7 @@ $(document).ready(function () {
     if (openArray.length == 2) {
       if (openArray[0] == openArray[1]) {
         coppieGiuste.push(openArray[0], openArray[1]);
-        if (coppieGiuste.length == 16) {
+        if (coppieGiuste.length == 2) {
           $(".modal").removeClass("modalClose");
           $(".modal").addClass("modalOpen");
           clearInterval(interval);
