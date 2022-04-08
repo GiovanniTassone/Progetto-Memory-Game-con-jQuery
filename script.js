@@ -16,7 +16,7 @@ const mieImg = [
   "united-kingdom",
   "united-kingdom",
 ];
-// creo una variabile che mi contiene le immagini cliccate
+// creo una variabile che mi contiene le immagini cliccate -----
 $(document).ready(function () {
   shuffle(mieImg);
   function shuffle(a) {
