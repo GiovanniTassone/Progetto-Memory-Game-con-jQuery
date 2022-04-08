@@ -58,7 +58,7 @@ $(document).ready(function () {
     if (openArray.length == 2) {
       if (openArray[0] == openArray[1]) {
         coppieGiuste.push(openArray[0], openArray[1]);
-        if (coppieGiuste.length == 2) {
+        if (coppieGiuste.length == 16) {
           $(".modal").removeClass("modalClose");
           $(".modal").addClass("modalOpen");
           clearInterval(interval);
