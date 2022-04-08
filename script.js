@@ -100,11 +100,11 @@ $(document).ready(function () {
         $("#tempoTrascorso").html( s + " secondi");
       }
       if (m >= 2){
-        $("#tempoTrascorso").html(m + " minuti e " + s + " secondi");
+        $("#tempoTrascorso").html(m + " minuti e " + s + " secondi");   //se i minuti sono maggiori o uguali di 2
       }else if(m == 1){
-        $("#tempoTrascorso").html(m + " minuto e " + s + " secondi");
+        $("#tempoTrascorso").html(m + " minuto e " + s + " secondi");   //se i minuti sono uguali a 1
       }else{
-        $("#tempoTrascorso").html( s + " secondi");
+        $("#tempoTrascorso").html( s + " secondi");   //se i minuti sono 0
       }
     }, 1000);
   }
