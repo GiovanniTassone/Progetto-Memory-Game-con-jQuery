@@ -88,7 +88,6 @@ $(document).ready(function () {
 
     interval = setInterval(function () {
       $(".timer").html("Tempo: " + m + " min " + s + " sec");
-      $("#tempoTrascorso").html( m + " min " + s + " sec");
       s++;
       if (s == 60) {
         m++;
@@ -97,6 +96,15 @@ $(document).ready(function () {
       if (m == 60) {
         h++;
         m = 0;
+      } if (m == 0){
+        $("#tempoTrascorso").html( s + " secondi");
+      }
+      if (m >= 2){
+        $("#tempoTrascorso").html(m + " minuti e " + s + " secondi");
+      }else if(m == 1){
+        $("#tempoTrascorso").html(m + " minuto e " + s + " secondi");
+      }else{
+        $("#tempoTrascorso").html( s + " secondi");
       }
     }, 1000);
   }
